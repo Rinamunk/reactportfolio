@@ -1,0 +1,386 @@
+@font-face {
+  font-family: "Quicksand";
+  src: url(/src/assets/Quicksand-Regular.otf);
+  src:url(/src/assets/Quicksand-Bold.otf) format("bold");
+  src:url(/src/assets/Quicksand-Italic.otf) format("italic");
+}
+
+:root {
+  font-family: "Quicksand", system-ui, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+nav {
+position: relative;
+margin: 0%;
+width: 100%;
+height: fit-content;
+font-size: 24px;
+color: inherit;
+background: #000000;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 10px;
+}
+nav ul{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+justify-content: center;
+align-items: center;
+list-style: none;
+text-decoration:none;
+width: 160px;
+height: 130px;
+z-index: 2;
+display: flex;
+clip-path: polygon(100% -10%, 100% 75%, 60% 95%, 0% 55%);
+background-color: #ffffff;
+}
+nav ul li a{
+position: relative;
+display: flex;
+justify-content: center;
+align-items: center;
+list-style: none;
+text-decoration:none;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+display: inline-block;
+}
+
+button {
+  cursor: pointer;
+  width: 20%;
+  -webkit-clip-path: polygon(22% 50%, 0 0, 0 100%);
+  clip-path: polygon(15% 50%, 0 0, 0 100%);
+  background-color: #18181a;
+  padding: 50px 50px; 
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #0e374e;
+}
+
+.oval-image {
+  width: 300px; 
+  height: 400px;
+  overflow: hidden; 
+  border-radius: 50%; 
+  position: relative;
+  float: right;
+  
+}
+
+.oval-image img {
+  width: 100%; /* Make the image cover the entire oval container */
+  height: auto;
+  display: block;
+}
+header{
+  width: calc(100% - 20px);
+}
+.banner{
+  margin: 0%;
+  width: calc(50% - 150px);
+  display: flex;
+  opacity: 0.99;
+
+}
+.banner img{
+  width: 100%; 
+  height: auto;
+  position: relative;
+  
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-top: 5%;
+}
+.heyyouseeso{
+  width:fit-content;
+  border-radius: 5%;
+  margin-top: 5%;
+  background-color: #000000; 
+  color: #ffffff; 
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main{
+  margin: 0;
+  padding: 0; 
+}
+.tekst{
+
+
+  padding-left: 5%;
+  padding-right: 5%;
+
+  font-size: 24px;
+}
+.gallery-item {
+  margin: 10px;
+  position: relative;
+  max-width: 300px; 
+  flex:1;
+  text-align: center;
+}
+
+/* Style for the image */
+.gallery-item img {
+  max-width: 300px; 
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+/* Style for the text (hidden by default) */
+.image-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Hover effect to show text */
+.gallery-item:hover .image-text {
+  opacity: 1;
+}
+video {
+  max-width: 300px; 
+  height: auto; 
+  display: block; 
+  margin: 0 auto; 
+}
+
+
+aside{
+flex-wrap: wrap;
+}
+.posts h2{
+  font-size: 30px;
+}
+.posts{
+  width: calc(100% - 200px);
+  justify-content: space-between;
+ text-align: center;
+  flex-wrap:nowrap;
+  padding:10px;
+  border: 2px solid black;
+  margin: 5%;
+}
+.posts img{
+  max-width: 120px;
+}
+
+.kunst-item {
+  background-color: rgb(0, 0, 0);
+  color: #f9f9f9;
+  margin-left: 20%;
+  margin-right: 20%;
+  padding-top: 5%;
+  padding-bottom: 2%;
+  border-radius: 2px 50px 2px 50px;
+  text-align: center;
+
+}
+/* Style the portfolio items */
+.portfolio-item {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid black;
+  margin: 5%;
+  padding: 70px;
+  border-radius: 2px 50px 2px 50px;
+  text-align: center;
+
+}
+h2{
+  text-align: center;
+  font-size: 40px;
+
+}
+.portfolio-item h3 {
+  color: rgb(255, 255, 255);
+  font-size: 32px;
+}
+
+.portfolio-item p {
+  color: rgb(255, 255, 255);
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.portfolio-item a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  background-color: #ffffff;
+  padding:20px;
+  border-radius:50%;
+  font-size: 38px;
+
+flex-wrap: nowrap;
+justify-content: center;
+}
+
+/* Style the rounded images */
+.rounded-image {
+justify-content: center;
+flex-wrap: nowrap;
+width: calc(70% - 20px);
+margin-top: 5%;
+margin-bottom: 5%;
+margin:10%;
+}
+.rounded-image img{
+  width: fit-content;
+}
+
+/* Footer.css */
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000000;
+  color: white;
+  padding: 0px;
+  text-align: center;
+  z-index: 1000;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social {
+  margin-top: 2px;
+  flex-wrap: wrap;
+}
+.social a{
+  text-decoration: none;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.social a:hover{
+  color: #ff5151;
+
+}
+
+.icon {
+  font-size: 30px;
+  flex-wrap: wrap;
+  margin-right: 5px;
+  color: white;
+  text-decoration: none;
+
+
+}
+
+
+/* Style icons on hover */
+.icon:hover {
+  color: #ff5151; /* Change to your desired hover color */
+}
+
+
+/* Responsive styles */
+@media screen and (max-width: 1248px) {
+  .gallery-item {
+      width: calc(50% - 200px);
+  }
+  .banner{
+    width: 450px;
+    position: relative;
+  }
+}
+@media screen and (max-width: 768px) {
+  .gallery-item {
+      width: calc(50% - 40px);
+  }
+  .gallery {
+
+    margin-left:0%;
+    margin-top: 0%;
+  }
+
+  a {
+    display: flex;
+    font-size: 20px;
+  }
+  .banner{
+    width: 300px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gallery-item {
+      width: 300px;
+  }
+  nav ul li {
+    font-size: 16px;
+    flex-direction: column-reverse;
+    background-color: #000000;
+    color: #f9f9f9;
+
+  }
+  .footer-container {
+    margin: 0;
+  }
+  .banner{
+    margin: 0%;
+    width: calc(50% - 100px);
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0.99;
+  
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
