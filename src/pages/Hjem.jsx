@@ -3,12 +3,12 @@ export default function Hjem() {
 
   return (
     <section>
+
+      <main>   
       <header className="banner">
         <img src="../shaperina.png" alt="Banner" id="banner"></img>
         <img src="../bulb.gif" alt="lightbulb"></img>
       </header>
-      <main>   
-
         <div className="heyyouseeso">
           <h2>Velkommen!</h2>       
           <p className="tekst">

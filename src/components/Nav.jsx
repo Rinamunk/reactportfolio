@@ -9,7 +9,10 @@ import * as React from 'react';
 export default function Nav (){
 
     return(
-        <nav>
+        <section>
+            <input type="checkbox" id="active"></input>
+            <label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+        <nav class="wrapper">
             <ul>
                 
                 <li>
@@ -24,7 +27,7 @@ export default function Nav (){
             </ul>
             
         </nav>
-        
+        </section>
 
     )
 }
