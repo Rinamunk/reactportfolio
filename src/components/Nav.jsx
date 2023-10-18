@@ -24,6 +24,7 @@ export default function Nav (){
                 <li>
                 <Face2Icon color="action"/>
                     <NavLink to="/ommig">Om Mig</NavLink></li>
+ 
             </ul>
             
         </nav>

@@ -8,6 +8,8 @@ import Ommig from "./pages/Ommig"
 import Footer from './components/Footer'
 
 
+
+
 function App() {
 
   return (
@@ -21,6 +23,7 @@ function App() {
           <Route path="/" element={<Hjem className="Hjem" />} />
           <Route path="/kunst" element={<Kunst/>} />
           <Route path="/ommig" element={<Ommig/>} />
+
 
         </Routes>
 

@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Quicksand";
   src: url(/src/assets/Quicksand-Regular.otf);
-  src:url(/src/assets/Quicksand-Bold.otf) format("bold");
-  src:url(/src/assets/Quicksand-Italic.otf) format("italic");
+  font-family: "Seas";
+  src: url(/src/assets/SEASRN__.ttf);
 }
 
 :root {
@@ -32,6 +32,7 @@ nav {
   width: 100%;
   clip-path: circle(25px at calc(100% - 45px) 45px);
   transition: all 0.3s ease-in-out;
+  z-index: 2;
 }
 .wrapper ul{
   position: absolute;
@@ -88,7 +89,7 @@ nav {
 }
 .menu-btn{
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   right: 20px;
   /* left: 20px; */
   top: 20px;
@@ -144,6 +145,7 @@ header{
   margin: 0%;
   width: calc(50% - 150px);
   display: flex;
+  opacity: 0.8;
 
 }
 .banner img{
@@ -162,8 +164,9 @@ header{
 .heyyouseeso{
   width:fit-content;
   border-radius: 2px 200px 2px 200px;
-  margin: 4%;
-  background-color: #333333; 
+  width: 100%;
+  padding-bottom: 20px;
+  background-color:#133A4E; 
   color: #ffffff; 
   text-align: center;
   display: flex;
@@ -174,6 +177,18 @@ header{
 main{
   margin: 0;
   padding: 0; 
+}
+.om-tekst{
+  width:fit-content;
+  width: 100%;
+  padding-bottom: 20px;
+  background-color:#133A4E; 
+  color: #ffffff; 
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
 }
 .tekst{
   padding-left: 5%;
@@ -201,7 +216,7 @@ main{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #133A4E;
   color: #fff;
   padding: 10px;
   opacity: 0;
@@ -233,7 +248,7 @@ flex-wrap: wrap;
 }
 
 .kunst-item {
-  background-color: rgb(0, 0, 0);
+  background-color: #133A4E;
   color: #f9f9f9;
   margin-left: 20%;
   margin-right: 20%;
@@ -246,22 +261,38 @@ flex-wrap: wrap;
 /* Style the portfolio items container */
 .portfolio-container {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between; /* Distribute items evenly in a row */
-  margin-bottom: 5%;
+
 }
 
 /* Style the portfolio items */
 .portfolio-item {
-  background: linear-gradient(-135deg, #202020, #504e4e);
+  background: #133A4E;
   border: 2px solid rgb(192, 192, 192);
-  margin: 2.5%; /* Adjust the margin to create space between items */
-  max-width: 40%; /* Adjust max-width to fit two items in a row */
+  width: 100%; /* Adjust max-width to fit two items in a row */
+
   padding: 20px; /* Adjust padding */
-  border-radius: 2px 200px 2px 200px;
   text-align: center;
 }
+.slider-container button{
+  position:relative;
+  z-index: 1;
+  left: 70px;
+  /* left: 20px; */
+  top: 80px;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  background: #2b2a2a;
+  text-decoration: none;
+  box-shadow: 0 8px 16px 0 rgba(170, 138, 138, 0.2), 0 6px 20px 0 rgba(112, 41, 41, 0.19);
+  /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
 
+}
 h2 {
   text-align: center;
   font-size: 40px;
@@ -270,22 +301,22 @@ h2 {
 .portfolio-item h3 {
   color: rgb(255, 255, 255);
   font-size: 40px;
-  font-weight: bold;
+  font-family: "Seas" sans-serif;
+
+  margin: 0%;
 
 }
 
 .portfolio-item p {
   color: rgb(255, 255, 255);
-  margin-top: 5%;
-  margin-bottom: 5%;
-  padding: 10px;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .portfolio-item a {
   color: rgb(255, 210, 210);
   text-decoration: none;
   padding: 20px;
-  border-radius: 90%;
   font-size: 38px;
   flex-wrap: nowrap;
   justify-content: center;
@@ -294,15 +325,20 @@ h2 {
 .rounded-image {
 justify-content: center;
 flex-wrap: nowrap;
-width: calc(70% - 20px);
-margin-top: 5%;
+width: calc(60% - 20px);
 margin-bottom: 5%;
-margin:10%;
+
+
 }
 .rounded-image img{
   width: fit-content;
-}
+  height: 200px;
 
+  
+}
+img{
+  z-index: 1;
+}
 /* Footer.css */
 
 footer {
@@ -390,6 +426,9 @@ footer {
   #root{
     margin: 1%;
   }
+  .slider-container button{
+    left: 20px;
+    /* left: 20px; */}
   .gallery-item {
       width: 300px;
   }
@@ -438,7 +477,5 @@ footer {
   a:hover {
     color: #ff7474;
   }
-  button {
-    background-color: #f9f9f9;
-  }
+
 }
