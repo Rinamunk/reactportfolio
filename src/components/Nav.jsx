@@ -20,7 +20,7 @@ export default function Nav (){
     return(
         <section>
             <input type="checkbox" id="active"></input>
-            <label htmlFor="active" className="menu-btn"><i className="fas fa-bars"></i></label>
+            <label htmlFor="active" className="menu-btn" onClick={openNav}><i className="fas fa-bars"></i></label>
         <nav className="wrapper">
             <ul>
                 
