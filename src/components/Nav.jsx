@@ -2,9 +2,6 @@ import { NavLink } from "react-router-dom";
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import Face2Icon from '@mui/icons-material/Face2';
 import HomeWorkIcon from '@mui/icons-material/HomeWork';
-import * as React from 'react';
-
-
 
 export default function Nav (){
     const openNav = () => {
