@@ -23,6 +23,7 @@ function App() {
           <Route path="/" element={<Hjem className="Hjem" />} />
           <Route path="/kunst" element={<Kunst/>} />
           <Route path="/ommig" element={<Ommig/>} />
+          <Route path="*" element={<Hjem/>} />
 
 
         </Routes>
