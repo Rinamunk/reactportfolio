@@ -34,6 +34,10 @@ nav {
   transition: all 0.3s ease-in-out;
   z-index: 2;
 }
+.wrapper{
+  background-color: #133A4E;
+}
+
 .wrapper ul{
   position: absolute;
   top: 50%;
@@ -152,6 +156,9 @@ header{
   width: 100%; 
   height: auto;
   position: relative;
+}
+input{
+  display: none;
 }
 
 .gallery {
@@ -279,11 +286,11 @@ flex-wrap: wrap;
   left: 70px;
   /* left: 20px; */
   top: 80px;
-  height: 100px;
-  width: 100px;
+  height: 150px;
+  width: 150px;
   text-align: center;
   line-height: 50px;
-  border-radius: 50%;
+  border-radius: 80%;
   font-size: 20px;
   color: #fff;
   cursor: pointer;

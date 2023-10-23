@@ -17,6 +17,7 @@ export default function Nav() {
 
   return (
     <section>
+      
       <input type="checkbox" id="active" checked={menuOpen} />
       <label htmlFor="active" className="menu-btn" onClick={menuOpen ? closeNav : openNav}>
         <i className="fas fa-bars"></i>
