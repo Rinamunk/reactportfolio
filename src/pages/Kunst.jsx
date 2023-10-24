@@ -1,3 +1,6 @@
+import MasonryImageList from "../components/imglist";
+
+
 export default function Kunst(){
     return(
         <section>
@@ -9,67 +12,15 @@ export default function Kunst(){
                 <h3>Kunst som frirum</h3>
                 <p>Min hobby er en verden af farver, former og kreativ udfoldelse. Jeg maler med akvarel, oliefarver og mixed media, og jeg lader mig inspirere af alt omkring mig. For mig er kunst en frisættende oplevelse, hvor jeg tror på at give slip på alle forventninger og normer. Det er et frirum, hvor jeg kan lege frit og lade min fantasi flyde.</p>
                     </div>
+        <MasonryImageList/>
                     
             <article className="gallery">
-        <div className="gallery-item">
-            <img src="../back.jpg" alt="back-of-man"></img>
-            <div className="image-text">Face away  -  made with watercolors and acrylics</div>
-        </div>
-    <div className="gallery-item">
-            <img src="../tree.jpg" alt="Tree-watercolor"></img>
-            <div className="image-text">Tree of life  -  made with watercolors</div>
-        </div>
-        <div className="gallery-item">
-            <img src="../handsface.jpg" alt="support"></img>
-            <div className="image-text">support - made with watercolors</div>
-        </div>
-        <div className="gallery-item">
-            <img src="../hand.jpg" alt="blu-hands"></img>
-            <div className="image-text"> Hand hovering - watercolors</div>
-        </div>
-        <div className="gallery-item">
-            <img src="../monoface.jpg" alt="portait-red"></img>
-            <div className="image-text">Afterthought - watercolors and ink</div>
-        </div>
-        <div className="gallery-item">
-            <img src="../doinghair.jpg" alt="doing-hair"></img>
-            <div className="image-text">Doing hair - watercolors</div>
-        </div>
-        <div className="gallery-item">
-            <img src="../double.jpg" alt="Brothers"></img>
-            <div className="image-text">Brothers - watercolors</div>
-        </div>
-        <div className="gallery-item">
-            <img src="../hug.jpg" alt="Needed Hug"></img>
-            <div className="image-text">Close - watercolors and colored pencil</div>
-        </div>
-        <div className="gallery-item">
-            <img src="../tern2.jpg" alt="Tern"></img>
-            <div className="image-text">Squares - alcohol markers and colored pencils </div>
-        </div>
-        <div className="gallery-item">
-            <img src="../regnbue.jpg" alt="Rainbow"></img>
-            <div className="image-text">Sunshine and Rainbows - colored pencils and acrylics</div>
-        </div>
-        <div className="gallery-item">
-            <img src="../shadows.jpg" alt="Skygger"></img>
-            <div className="image-text">Skygger - watercolors</div>
-        </div>
-        <div className="gallery-item">
-            <img src="../triangle.jpg" alt="triangle"></img>
-            <div className="image-text">Triangle - watercolors and ink</div>
-            </div>
-            <div className="gallery-item">
-            <img src="../distorted.jpg" alt="distorted"></img>
-            <div className="image-text">Distorted - watercolors</div>
-            </div>
+
+
+
             <div className="gallery-item">
             <img src="../cirkeline.jpg" alt="cirkeline"></img>
             <div className="image-text">Cirkeline - watercolors and acrylics</div>
-            </div>
-            <div className="gallery-item">
-            <img src="../womandown.jpg" alt="womandown"></img>
-            <div className="image-text">Woman Down - watercolors</div>
             </div>
             <div className="gallery-item">
             <img src="../selvportrat.jpg" alt="Selvportræt"></img>
