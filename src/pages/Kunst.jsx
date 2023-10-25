@@ -14,27 +14,11 @@ export default function Kunst(){
                     </div>
         <MasonryImageList/>
                     
-            <article className="gallery">
-
-
-
-            <div className="gallery-item">
-            <img src="../cirkeline.jpg" alt="cirkeline"></img>
-            <div className="image-text">Cirkeline - watercolors and acrylics</div>
-            </div>
-            <div className="gallery-item">
-            <img src="../selvportrat.jpg" alt="Selvportræt"></img>
-            <div className="image-text">Selfportrait- watercolors</div>
-            </div>
-        </article>
         <div className="portfolio-item">
-      
           <h3></h3>
-          
           <p>I kunstverdenen er der ofte en tendens til at stræbe efter perfektion og følge de "rigtige" metoder. Men jeg tror på at bevare den frihed, vi havde som børn, til at gøre, hvad der falder os ind. Det er netop i denne legende tilgang til kunst, at jeg finder noget nyt og spændende. Det handler ikke om at opnå det perfekte resultat, men om at udforske og udtrykke mig selv.</p>
-            <p>Jeg deler min kærlighed til kunsten ved at sælge mine værker og lave bestillingsarbejder. Mit særlige fokus ligger på portrætter, hvor jeg stræber efter at fange essensen af mine emner gennem farver og penselstrøg. Men jeg elsker også at udfordre mig selv og min kreativitet ved at deltage i årlige begivenheder som "swordtember". Hver september kaster jeg mig ud i at tegne en række forskellige sværd. Dette er ikke kun for at bringe variation ind i min kunst, men også for at træne de kreative muskler, som man ikke altid får brugt i sin daglige praksis.</p>
+            <p> Jeg elsker at udfordre mig selv og min kreativitet ved at deltage i årlige begivenheder som "swordtember". Hver september kaster jeg mig ud i at tegne en række forskellige sværd. Dette er ikke kun for at bringe variation ind i min kunst, men også for at træne de kreative muskler, som man ikke altid får brugt i sin daglige praksis.</p>
           <p>For mig handler min hobby om at finde glæde i kunsten, udforske min kreativitet og inspirere andre til at tænke uden for boksen. Det er et evigt eventyr, hvor kun fantasien sætter grænser, og hvor jeg kan finde skønhed i selv de mest usandsynlige steder.</p>
-
     <img src="../kunstplan.jpg" alt="Project 2" className="rounded-image"></img>
         </div>
         

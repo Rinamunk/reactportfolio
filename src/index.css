@@ -267,6 +267,10 @@ flex-wrap: wrap;
   display: flex;
 
 }
+.kompetence{
+  max-width: 65px;
+padding: 2%;
+}
 
 /* Style the portfolio items */
 .portfolio-item {
@@ -287,15 +291,18 @@ flex-wrap: wrap;
   width: 150px;
   text-align: center;
   line-height: 50px;
-  border-radius: 80%;
   font-size: 20px;
   color: #fff;
   cursor: pointer;
-  background: #2b2a2a;
+  background: #ff7474;
   text-decoration: none;
   box-shadow: 0 8px 16px 0 rgba(170, 138, 138, 0.2), 0 6px 20px 0 rgba(112, 41, 41, 0.19);
   /* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
 
+}
+.card{
+  display: flex;
+  flex-wrap: wrap;
 }
 h2 {
   text-align: center;

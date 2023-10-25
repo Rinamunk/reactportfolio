@@ -1,4 +1,7 @@
-import PortfolioSlider from "../components/portfolioslider";
+import { Stack, Typography } from "@mui/material";
+import Actioncard from "../components/projectcard";
+import KompetenceKort from "../components/kompetencer";
+
 
 
 
@@ -20,9 +23,20 @@ export default function Hjem() {
             lille rejse gennem, hvem jeg er, og hvad jeg elsker at lave.
           </p>            
           <img src="../rina.jpg" alt="Rina" className="oval-image"></img>
+          <Stack direction="row" spacing={2}>
+            <img src="../src/assets/html.png" alt="html" className="kompetence"></img>
+            <img src="../src/assets/css.png" alt="css" className="kompetence"></img>
+            <img src="../src/assets/js.svg" alt="js" className="kompetence"></img>
+
+          </Stack>
+  
 
         </div>
-        <PortfolioSlider />
+
+                <Typography variant="h2">Mine Projekter</Typography>
+
+
+        <Actioncard />
 
       </main>        
 
