@@ -1,5 +1,5 @@
 import { Box, ImageList, ImageListItem, ImageListItemBar } from '@mui/material';
-import image1 from '../assets/regnbue.jpg';
+import image14 from '../assets/regnbue.jpg';
 import image2 from '../assets/monoface.jpg';
 import image3 from '../assets/tern2.jpg';
 import image4 from '../assets/hug.jpg';
@@ -12,7 +12,7 @@ import image10 from '../assets/double.jpg';
 import image11 from '../assets/shadows.jpg';
 import image12 from '../assets/triangle.jpg';
 import image13 from '../assets/distorted.jpg';
-import image14 from '../assets/womandown.jpg';
+import image1 from '../assets/womandown.jpg';
 
 
 export default function MasonryImageList() {
@@ -37,7 +37,7 @@ export default function MasonryImageList() {
 
 const itemData = [
   {
-    img: image1,
+    img: image14,
     title: 'Regnbue',
     text: 'Sunshine and Rainbows',
   },
@@ -102,7 +102,7 @@ const itemData = [
     text: 'distorted'
   },
   {
-    img: image14,
+    img: image1,
     title: 'womandown',
     text: 'Womandown'
   },
