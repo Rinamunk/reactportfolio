@@ -1,28 +1,39 @@
-import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import CardMedia from '@mui/material/CardMedia';
+import Typography from '@mui/material/Typography';
+import { Button, CardActionArea, CardActions } from '@mui/material';
+import { MainBtn } from './button';
 
 
-export default function Actioncard() {
+export default function Actioncard(props) {
     return(
         <section className="card">
-        <Card sx={{maxWidth:345, margin:5}}>
+        <Card sx={{width:345, margin:3, marginBottom:5}}>
             <CardActionArea>
-                <CardMedia 
-                component='img'
-                height='140'
-                image='./src/assets/modtaget.gif'
-                alt='Nippon'
-                />
+                <CardMedia
+                          component="img"
+                          height="300"
+                          image={props.image} 
+                          >
+                </CardMedia>
                 <CardContent>
-                    <Typography variant="h5" component="div"> Nippon - Ux Projekt</Typography>
-                    <Typography variant="body1" color="text.secondary">I dette projekt har jeg arbejdet i en gruppe med det fiktive måltidskassefirma Nippon, der er inspireret af det japanske køkken. Vores hovedmål var at designe en brugervenlig online platform ved hjælp af Adobe XD til prototyping og designprocessen. Teknisk implementerede vi platformen ved at bruge HTML5, CSS3 og JavaScript.'</Typography>
-            
+                    <Typography variant="h3" component="div"> 
+                      {props.title}
+                    </Typography>
+                    <Typography variant='h6'>
+                      {props.subheader}
+                    </Typography>
+                    <Typography variant="body1" color="text.secondary">
+                      {props.body}
+
+                    </Typography>
+                     
                     </CardContent>
             </CardActionArea>
             <CardActions>
-        <Button variant="outlined" size="small" color="primary" href="http://nippon.rinamunk.dk/">
-          Gå til hjemmesiden her 
-        </Button>
       </CardActions>
+
         </Card>
       
         </section>

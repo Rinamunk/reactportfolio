@@ -195,6 +195,7 @@ main{
 
 }
 .tekst{
+  flex-wrap: wrap;
   padding-left: 5%;
   padding-right: 5%;
   font-size: 24px;
@@ -277,7 +278,6 @@ padding: 2%;
   background: #133A4E;
   border: 2px solid rgb(192, 192, 192);
   width: 100%; /* Adjust max-width to fit two items in a row */
-
   padding: 20px; /* Adjust padding */
   text-align: center;
 }
@@ -303,6 +303,7 @@ padding: 2%;
 .card{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 h2 {
   text-align: center;
@@ -313,9 +314,7 @@ h2 {
   color: rgb(255, 255, 255);
   font-size: 40px;
   font-family: "Seas" sans-serif;
-
   margin: 0%;
-
 }
 
 .portfolio-item p {
@@ -336,17 +335,21 @@ h2 {
 .rounded-image {
 justify-content: center;
 flex-wrap: nowrap;
+max-width: 400px;
 width: calc(60% - 20px);
 margin-bottom: 5%;
-
-
 }
 .rounded-image img{
   width: fit-content;
   height: 200px;
-
-  
 }
+.profile{
+justify-content: center;
+flex-wrap: wrap;
+border-radius: 10px 10px 10px 200px;
+width: calc(30% - 20px);
+}
+
 img{
   z-index: 1;
 }

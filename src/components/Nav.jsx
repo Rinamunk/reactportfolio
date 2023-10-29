@@ -25,19 +25,19 @@ export default function Nav() {
       <nav className="wrapper">
         <ul>
           <li>
-            <HomeWorkIcon color="action" />
+            <HomeWorkIcon color="action" fontSize="large" />
             <NavLink to="/" onClick={closeNav}>
               Hjem
             </NavLink>
           </li>
           <li>
-            <ColorLensIcon color="action" />
+            <ColorLensIcon color="action" fontSize="large" />
             <NavLink to="/kunst" onClick={closeNav}>
               Kunst
             </NavLink>
           </li>
           <li>
-            <Face2Icon color="action" />
+            <Face2Icon color="action" fontSize="large" />
             <NavLink to="/ommig" onClick={closeNav}>
               Om Mig
             </NavLink>

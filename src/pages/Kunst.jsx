@@ -3,6 +3,7 @@ import MasonryImageList from "../components/imglist";
 
 export default function Kunst(){
     return(
+        
         <section>
             <header className="banner">
                 <img src="../shaperina.png"></img>
