@@ -17,7 +17,7 @@ import image1 from '../assets/womandown.jpg';
 
 export default function MasonryImageList() {
   return (
-    <Box sx={{ justifyContent:'center', height: '100vh', alignItems: 'center', overflowY: 'scroll' }}>
+    <Box sx={{ justifyContent:'center', height: '100vh', alignItems: 'center', overflowY: 'scroll', maxWidth:'1200'}}>
       <ImageList variant="masonry" cols={3} gap={8}>
         {itemData.map((item) => ( // Use itemData instead of ListItemSecondaryAction
           <ImageListItem key={item.img}>

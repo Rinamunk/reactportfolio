@@ -1,10 +1,19 @@
+import { ThemeProvider } from "@emotion/react";
 import MasonryImageList from "../components/imglist";
+import { CssBaseline } from "@mui/material";
+import { useTheme } from "styled-components";
+import { customTheme } from "../themes/themes";
 
 
 export default function Kunst(){
+    // Hent det aktuelle tema ved hjælp af useTheme hook
+    const outerTheme = useTheme();
     return(
-        
-        <section>
+        <ThemeProvider theme={customTheme(outerTheme)}>
+        <CssBaseline enableColorScheme />
+        <section
+        sx={{justifyContent:'center', alignItems: 'center'}}
+        >
             <header className="banner">
                 <img src="../shaperina.png"></img>
                 <img src="../paint.gif"></img>
@@ -13,7 +22,7 @@ export default function Kunst(){
                 <h3>Kunst som frirum</h3>
                 <p>Min hobby er en verden af farver, former og kreativ udfoldelse. Jeg maler med akvarel, oliefarver og mixed media, og jeg lader mig inspirere af alt omkring mig. For mig er kunst en frisættende oplevelse, hvor jeg tror på at give slip på alle forventninger og normer. Det er et frirum, hvor jeg kan lege frit og lade min fantasi flyde.</p>
                     </div>
-        <MasonryImageList/>
+        <MasonryImageList />
                     
         <div className="portfolio-item">
           <h3></h3>
@@ -24,5 +33,6 @@ export default function Kunst(){
         </div>
         
         </section>
+        </ThemeProvider>
     )
 }

@@ -1,9 +1,12 @@
 import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
-
+import JS from "../assets/js.svg"
+import CSS from "../assets/css.png"
+import HTML from "../assets/html.png"
+import Figma from "../assets/figma.png"
 
 export default function KompetenceKort() {
     return(
-        <section className="card" >
+        <section className="card" display={"flex"} flexWrap={"wrap"}>
             <Typography variant="h5" lineHeight={3}>
                 Softwarekompetencer
             </Typography>
@@ -12,8 +15,8 @@ export default function KompetenceKort() {
                 <CardMedia 
                 component='img'
                 height='65'
-                image='./src/assets/css.png'
-                alt='Nippon'
+                image={HTML}
+                alt='Html'
                 />
             </CardActionArea>
         </Card>
@@ -22,8 +25,8 @@ export default function KompetenceKort() {
                 <CardMedia 
                 component='img'
                 height='65'
-                image='./src/assets/html.png'
-                alt='Nippon'
+                image={CSS}
+                alt='CSS'
                 />
             </CardActionArea>
         </Card>
@@ -32,8 +35,8 @@ export default function KompetenceKort() {
                 <CardMedia 
                 component='img'
                 height='65'
-                image='./src/assets/js.svg'
-                alt='Nippon'
+                image={JS}
+                alt='Javascript'
                 />
             </CardActionArea>
         </Card>
@@ -42,8 +45,8 @@ export default function KompetenceKort() {
                 <CardMedia 
                 component='img'
                 height='65'
-                image='./src/assets/figma.png'
-                alt='Nippon'
+                image={Figma}
+                alt='Figma'
                 />
             </CardActionArea>
         </Card>

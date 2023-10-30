@@ -54,6 +54,9 @@ export const customTheme = (outerTheme) =>
         fontSize: '1rem',
       },
     },
+    container: {
+      width: '100%',
+    },
   },);
 
 
