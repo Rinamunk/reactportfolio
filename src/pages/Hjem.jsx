@@ -12,6 +12,7 @@ import Streetfood from "../assets/streetfood.png"
 import Medova from "../assets/logomedova.png"
 import Flex from "../assets/flexlogo.png"
 import Arty from "../assets/front.png"
+import Shape from "../assets/shaperina.png"
 
 
 export default function Hjem() {
@@ -26,15 +27,15 @@ export default function Hjem() {
             <CssBaseline enableColorScheme />
       <main>
         <header className="banner">
-          <img src="../shaperina.png" alt="Banner" id="banner" />
-          <img src="../bulb.gif" alt="lightbulb" />          
+          <img src={Shape} alt="Banner" className="banner-in" />
+          <img src="../bulb.gif" alt="lightbulb" className="banner-in" />          
 
         </header>
         <Stack display={"flex"} flexWrap={"wrap"} className="intro" justifyContent={'center'} alignItems={'center'}  >
           <Typography variant="h2">Velkommen</Typography>
           <Typography variant="h3">Hey derude, mit navn er Rina</Typography>
 
-          <Typography variant="body1">Hey derude, mit navn er Rina, og jeg er så glad for, at du er landet her på min side. Jeg er en 28-årig multimediedesign-studerende med en passion for at skabe digitale mesterværker. Lad mig tage dig med på en lille rejse gennem, hvem jeg er, og hvad jeg elsker at lave.</Typography>
+          <Typography variant="body1">Jeg er så glad for, at du er landet her på min side. Jeg er en 28-årig multimediedesign-studerende med en passion for at skabe digitale mesterværker. Lad mig tage dig med på en lille rejse gennem, hvem jeg er, og hvad jeg elsker at lave.</Typography>
           <img src={Rina} className="custom-card-media"></img>
 
         </Stack>
