@@ -7,6 +7,14 @@ import { Button, CardActionArea, CardActions } from '@mui/material';
 
 
 export default function Actioncard(props) {
+
+    const cardMaxHeight = 200; // You can adjust this value to match your desired max height
+  
+    const cardContentStyle = {
+      maxHeight: cardMaxHeight,
+      overflow: 'hidden',
+    };
+
   const { title, subheader, body, image, onClick } = props;
     return(
         <section className="card">
@@ -24,7 +32,7 @@ export default function Actioncard(props) {
                           image={props.image} 
                           >
                 </CardMedia>
-                <CardContent>
+                <CardContent style={cardContentStyle}>
                     <Typography variant="h3" component="div" color={'white'}> 
                       {props.title}
                     </Typography>
