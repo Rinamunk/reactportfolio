@@ -1,65 +1,92 @@
+import React from 'react';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
-
+import { Button, CardActionArea, CardActions, Collapse, Stack, styled } from '@mui/material';
 
 
 export default function Actioncard(props) {
+  const StyledButton = styled(Button)`
+    ${({ theme }) => `
+      cursor: pointer;
+      background-color: ${theme.palette.primary.main};
+      transition: ${theme.transitions.create(['background-color', 'transform'], {
+        duration: theme.transitions.duration.standard,
+      })};
+      &:hover {
+        background-color: ${theme.palette.secondary.light};
+        transform: scale(1.3);
+      }
+    `}
+  `;
 
-    const cardMaxHeight = 200; // You can adjust this value to match your desired max height
-  
-    const cardContentStyle = {
-      maxHeight: cardMaxHeight,
-      overflow: 'hidden',
-    };
 
-  const { title, subheader, body, image, onClick } = props;
-    return(
-        <section className="card">
-        <Card sx={{
-          width:390, 
-          padding: 5,
-          marginBottom:5, 
-          justifyContent: 'center',
-          backgroundColor:'#396275',
-        }}>
-            <CardActionArea>
-                <CardMedia
-                          component="img"
-                          height="300"
-                          image={props.image} 
-                          >
-                </CardMedia>
-                <CardContent style={cardContentStyle}>
-                    <Typography variant="h3" component="div" color={'white'}> 
-                      {props.title}
-                    </Typography>
-                    <Typography variant='h6' color={'secondary'}>
-                      {props.subheader}
-                    </Typography>
-                    <Typography variant="body1" color={'white'}>
-                      {props.body}
+  const { onClick } = props;
 
-                    </Typography>
-                     
-                    </CardContent>
-            </CardActionArea>
-                                {/* button leading to external sites */}
-                       <Button
-                        variant="outlined"
-                        color="secondary"
-                        onClick={onClick} // Use the onClick prop here
-                    >
-                        Se hjemmesiden her!
-                    </Button>
-            <CardActions>
-      </CardActions>
-
-        </Card>
+  return (
+    <Stack>
+      <Card
+        sx={{
+          width: 390,
+          height: 600,
+          paddingBottom:2,
+          margin: 2,
+          borderRadius: 15,
+          
+        }}
+      >
+        <CardActionArea
+                  sx={{
+                    justifyContent: 'center',
+                    alignContent: 'center',
+                    alignItems: 'center'
+                  }}
+        >
+          <CardMedia 
+          component="img" 
+          sx={{
+            width:300,
+            justifyContent: 'center',
+            padding:2,
+          }}
       
-        </section>
-        
-    )
+          image={props.image}>
+    
+          </CardMedia>
+          <CardContent >
+            <Typography variant="h3" component="div" color={'primary'}>
+              {props.title}
+            </Typography>
+            <Typography variant="h6" color={'secondary'}>
+              {props.subheader}
+            </Typography>
+            <Typography variant="body1" color={'primary'}>
+              {props.body}
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+
+
+
+        <CardActions
+        sx={{
+          justifyContent: 'center',
+          alignItems: 'flex-end'
+          
+        }}
+        >        
+          <StyledButton variant="outlined" color="secondary" onClick={onClick}         
+        sx={{
+          borderRadius:15,
+          justifyContent: 'flex-end'
+        }}
+        >
+          Se hjemmesiden her!
+        </StyledButton>
+        </CardActions>
+
+      </Card>
+    </Stack>
+  );
 }

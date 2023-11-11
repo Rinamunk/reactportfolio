@@ -7,14 +7,20 @@ export const customTheme = (outerTheme) =>
     palette: {
       mode: 'light',
       primary: {
-        main: '#133A4E',
+        main: '#3e7b94',
         light: '#396275',
         dark: '#0e3341',
       },
       secondary: {
         main: '#ff5151',
+        dark: '#f16161',
+        light: '#ff8383',
       },
       divider: 'rgba(41,41,41,0.12)',
+      warning: {
+        main: '#ff0002',
+      },
+  
     },
     typography: {
       fontFamily: '"Quicksand", "Helvetica", "Arial", sans-serif',
@@ -57,6 +63,23 @@ export const customTheme = (outerTheme) =>
     container: {
       width: '100%',
     },
+    transitions: {
+      duration: {
+        shortest: 150,
+        shorter: 200,
+        short: 250,
+        // most basic recommended timing
+        standard: 300,
+        // this is to be used in complex animations
+        complex: 375,
+        // recommended when something is entering screen
+        enteringScreen: 225,
+        // recommended when something is leaving screen
+        leavingScreen: 195,
+      },
+    },
+
+
   },);
 
 

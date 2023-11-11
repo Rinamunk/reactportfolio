@@ -6,15 +6,18 @@ import Hjem from "./pages/Hjem"
 import Kunst from "./pages/Kunst"
 import Ommig from "./pages/Ommig"
 import Footer from './components/Footer'
+import { ThemeProvider, useTheme } from '@mui/material'
+import { customTheme } from "../src/themes/themes";
 
 
 
 
 function App() {
+  const outerTheme = useTheme();
 
   return (
     <>
-      <div className='container'>
+      <ThemeProvider theme={customTheme(outerTheme)} className='container'>
         <div >
           
         <Nav/>
@@ -29,7 +32,7 @@ function App() {
         </Routes>
 
         </div>
-      </div>
+      </ThemeProvider>
       <Footer/> 
     </>
   )

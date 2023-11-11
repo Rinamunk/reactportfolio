@@ -1,20 +1,23 @@
-import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Typography } from "@mui/material";
+import { Button, Card, CardActionArea, CardActions, CardContent, CardMedia, Divider, Typography } from "@mui/material";
 import JS from "../assets/js.svg"
 import CSS from "../assets/css.png"
 import HTML from "../assets/html.png"
 import Figma from "../assets/figma.png"
+import React from "../assets/react.png"
+import Photo from "../assets/ps.png"
 
 export default function KompetenceKort() {
     return(
-        <section className="card" display={"flex"} flexWrap={"wrap"}>
+        <section className="card"  >
             <Typography variant="h5" lineHeight={3}>
                 Softwarekompetencer
             </Typography>
+            <Divider></Divider>
         <Card sx={{maxWidth:150, margin:1}}>
             <CardActionArea>
                 <CardMedia 
                 component='img'
-                height='65'
+                height='50'
                 image={HTML}
                 alt='Html'
                 />
@@ -24,7 +27,7 @@ export default function KompetenceKort() {
             <CardActionArea>
                 <CardMedia 
                 component='img'
-                height='65'
+                height='50'
                 image={CSS}
                 alt='CSS'
                 />
@@ -34,7 +37,7 @@ export default function KompetenceKort() {
             <CardActionArea>
                 <CardMedia 
                 component='img'
-                height='65'
+                height='50'
                 image={JS}
                 alt='Javascript'
                 />
@@ -44,12 +47,33 @@ export default function KompetenceKort() {
             <CardActionArea>
                 <CardMedia 
                 component='img'
-                height='65'
+                height='50'
                 image={Figma}
                 alt='Figma'
                 />
             </CardActionArea>
         </Card>
+        <Card sx={{maxWidth:150, margin:1}}>
+            <CardActionArea>
+                <CardMedia 
+                component='img'
+                height='50'
+                image={React}
+                alt='React'
+                />
+            </CardActionArea>
+        </Card>
+        <Card sx={{maxWidth:150, margin:1}}>
+            <CardActionArea>
+                <CardMedia 
+                component='img'
+                height='50'
+                image={Photo}
+                alt='PhotoShop'
+                />
+            </CardActionArea>
+        </Card>
+      
       
       
         </section>

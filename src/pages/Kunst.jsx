@@ -3,6 +3,7 @@ import MasonryImageList from "../components/imglist";
 import { CssBaseline } from "@mui/material";
 import { useTheme } from "styled-components";
 import { customTheme } from "../themes/themes";
+import Shape from "../assets/shaperina.png"
 
 
 export default function Kunst(){
@@ -15,8 +16,8 @@ export default function Kunst(){
         sx={{justifyContent:'center', alignItems: 'center'}}
         >
             <header className="banner">
-                <img src="../shaperina.png"></img>
-                <img src="../paint.gif"></img>
+            <img src={Shape} alt="Banner" className="banner-in" />
+                <img src="../paint.gif" className="banner-in"></img>
             </header>   
                 <div className="portfolio-item">
                 <h3>Kunst som frirum</h3>
