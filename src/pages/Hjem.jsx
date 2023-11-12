@@ -1,8 +1,9 @@
 // Import necessary modules and components
 
-import {  CssBaseline, Divider, Stack, ThemeProvider, Typography } from "@mui/material";
+import {  Button, CssBaseline, Divider, Stack, ThemeProvider, Typography } from "@mui/material";
 import Actioncard from "../components/projectcard";
 import KompetenceKort from "../components/kompetencer";
+import EmailButton from "../components/mail.jsx"
 import { useTheme } from "styled-components";
 import { customTheme } from "../themes/themes.jsx";
 import Rina from "../assets/rina.jpg"
@@ -14,6 +15,7 @@ import Flex from "../assets/flexlogo.png"
 import Arty from "../assets/front.png"
 import Uniq from "../assets/uniq.png"
 import Shape from "../assets/shaperina.png"
+import { NavLink } from "react-router-dom";
 
 
 
@@ -24,30 +26,51 @@ export default function Hjem() {
          // Hent det aktuelle tema ved hjælp af useTheme hook
      const outerTheme = useTheme();
 
-
   return (
-            <ThemeProvider theme={customTheme(outerTheme)}>
+            <ThemeProvider theme={customTheme(outerTheme)}
+         
+            >
             <CssBaseline enableColorScheme />
-      <main>
+   
         <header className="banner">
-          <img src={Shape} alt="Banner" className="banner-in" />
+        <NavLink> <img src={Shape} alt="Banner" className="banner-in" /></NavLink> 
           <img src="../bulb.gif" alt="lightbulb" className="banner-in" />           
 
         </header>
         <Stack  className="intro" justifyContent={'center'} alignItems={'center'}  >
 
-
+          <Typography variant="h3"
+                sx={{ 
+                  color: customTheme => customTheme.palette.primary.main 
+                }}
+          >Hejsa og tak fordi du kigger forbi!</Typography>
+                    <Typography variant="h6"
+                sx={{ 
+                  color: customTheme => customTheme.palette.primary.main 
+                }}
+          >Jeg studerer multimediedesigner på frontend linjen og søger praktik til start 2024.</Typography>
+                              <Typography variant="h6"
+                sx={{ 
+                  color: customTheme => customTheme.palette.primary.main 
+                }}
+          >Kontakt mig her for høre om jeg passer ind hos jer</Typography>
+          <EmailButton/>
           <img src={Rina} className="custom-card-media"></img>
+
 
         </Stack>
 
 
         <KompetenceKort 
-        sx={{width:100, margin:40 }}
+        sx={{width:100, margin:10 }}
         />
 
               <Divider variant="inset" component="ul"  sx={{ margin:6 }}/>
-        <Typography variant="h2">Mine Projekter</Typography>
+        <Typography variant="h2"
+        sx={{
+          color: customTheme => customTheme.palette.primary.main 
+        }}
+        >Mine Projekter</Typography>
         <Stack 
         sx={{
           display: "flex",
@@ -56,6 +79,7 @@ export default function Hjem() {
           padding: 2,
           marginBottom:10,
           overflow: 'auto'
+          
         }}
         >
 
@@ -113,7 +137,7 @@ export default function Hjem() {
             onClick={() => handleButtonClick('artjourney.rinamunk.dk')}
           />
         </Stack>
-      </main>
+      
     </ThemeProvider>
   );
 }

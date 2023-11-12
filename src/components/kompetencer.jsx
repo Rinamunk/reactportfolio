@@ -9,11 +9,18 @@ import Photo from "../assets/ps.png"
 export default function KompetenceKort() {
     return(
         <section className="card"  >
-            <Typography variant="h5" lineHeight={3}>
+            <Typography variant="h5" lineHeight={3}
+                            sx={{ 
+                                color: customTheme => customTheme.palette.secondary.main 
+                              }}
+            >
                 Softwarekompetencer
             </Typography>
             <Divider></Divider>
-        <Card sx={{maxWidth:150, margin:1}}>
+        <Card sx={{maxWidth:150, 
+            margin:1,
+            backgroundColor: "rgba(255, 255, 255, 0.05)",
+            }}>
             <CardActionArea>
                 <CardMedia 
                 component='img'
@@ -23,7 +30,8 @@ export default function KompetenceKort() {
                 />
             </CardActionArea>
         </Card>
-        <Card sx={{maxWidth:150, margin:1}}>
+        <Card sx={{maxWidth:150, margin:1,
+                    backgroundColor: "rgba(255, 255, 255, 0.05)",}}>
             <CardActionArea>
                 <CardMedia 
                 component='img'
@@ -33,7 +41,9 @@ export default function KompetenceKort() {
                 />
             </CardActionArea>
         </Card>
-        <Card sx={{maxWidth:150, margin:1}}>
+        <Card sx={{maxWidth:150, margin:1,
+                    backgroundColor: "rgba(255, 255, 255, 0.05)",
+                    }}>
             <CardActionArea>
                 <CardMedia 
                 component='img'
@@ -43,7 +53,9 @@ export default function KompetenceKort() {
                 />
             </CardActionArea>
         </Card>
-        <Card sx={{maxWidth:150, margin:1}}>
+        <Card sx={{maxWidth:150, margin:1,
+                    backgroundColor: "rgba(255, 255, 255, 0.05)",
+                    }}>
             <CardActionArea>
                 <CardMedia 
                 component='img'
@@ -53,7 +65,9 @@ export default function KompetenceKort() {
                 />
             </CardActionArea>
         </Card>
-        <Card sx={{maxWidth:150, margin:1}}>
+        <Card sx={{maxWidth:150, margin:1,
+                    backgroundColor: "rgba(255, 255, 255, 0.05)",
+                    }}>
             <CardActionArea>
                 <CardMedia 
                 component='img'
@@ -63,7 +77,9 @@ export default function KompetenceKort() {
                 />
             </CardActionArea>
         </Card>
-        <Card sx={{maxWidth:150, margin:1}}>
+        <Card sx={{maxWidth:150, margin:1,
+                    backgroundColor: "rgba(255, 255, 255, 0.05)",
+                    }}>
             <CardActionArea>
                 <CardMedia 
                 component='img'

@@ -27,7 +27,11 @@ export default function MasonryImageList() {
               alt={item.title}
               loading="lazy"
             />
-            <ImageListItemBar position='below' title={item.text}/>
+            <ImageListItemBar position='below' title={item.text}
+                                    sx={{ 
+                                      color: customTheme => customTheme.palette.secondary.main 
+                                    }}
+            />
           </ImageListItem>
         ))}
       </ImageList>

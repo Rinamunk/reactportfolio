@@ -12,11 +12,11 @@ export default function Kunst(){
     return(
         <ThemeProvider theme={customTheme(outerTheme)}>
         <CssBaseline enableColorScheme />
-        <section
-        sx={{justifyContent:'center', alignItems: 'center'}}
+        <section className="kunst"
+        sx={{justifyContent:'center', alignItems: 'center' }}
         >
             <header className="banner">
-            <img src={Shape} alt="Banner" className="banner-in" />
+            <NavLink> <img src={Shape} alt="Banner" className="banner-in" /></NavLink> 
                 <img src="../paint.gif" className="banner-in"></img>
             </header>   
                 <div className="portfolio-item">

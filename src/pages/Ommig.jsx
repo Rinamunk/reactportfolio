@@ -36,14 +36,15 @@ export default function Ommig(){
  
 
             <header className="banner">
-            <img src={Shape} alt="Banner" className="banner-in" />
+            <NavLink> <img src={Shape} alt="Banner" className="banner-in" /></NavLink> 
                 <img src="../face.gif" className="banner-in"></img>
             </header>
 
-            <Stack display={"flex"}   justifyContent={'center'} alignItems={'center'}   paddingLeft={5} paddingRight={5}>
+            <Stack display={"flex"}   justifyContent={'center'} alignItems={'center'}   paddingLeft={5} paddingRight={5} paddingBottom={20} > 
           <Typography variant="h3" marginBottom={10}
                         sx={{ 
                             color: customTheme => customTheme.palette.primary.main 
+                            
                             
                           }}
                           >Hejsa, her kan du læse lidt om mig &#10084;</Typography>
