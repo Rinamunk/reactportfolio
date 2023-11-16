@@ -79,6 +79,7 @@ nav {
   max-width: 25%;
   display: flex;
   border-radius: 1% 50% 1% 50%;
+  box-shadow: -10px 20px #f9f9f9;
 }
 
 .intro-om{
@@ -96,24 +97,20 @@ max-width: 100%;
   border-radius: 5% 50% 5% 50%;
 }
 .intro{
-
-  width: 100%;
-  margin: 0%;
-padding-right: 30%;
-padding-left: 5%;
-padding-top: 5%;
-padding-bottom: 5%;
+background-color: rgba(0, 0, 0, 0.1);
 display: flex;
 flex-wrap: wrap;
+margin-left: 50%;
+border-radius: 2%;
+padding: 2%;
+max-width: fit-content;
 
 }
 .intro img{
   position: relative;
-
-  left: 80%;
-  transform: translate(-50%, -80%);
   font-size: 18px;
-  max-width: 200px;
+  max-width: 300px;
+  padding: 5px;
 }
 .wrapper{
   position: fixed;
@@ -157,35 +154,10 @@ flex-wrap: wrap;
   content: "\f00d";
 }
 
-body {
-  margin: 20px;
-
-}
-
-h1 {
-display: inline-block;
-}
-
 button:hover {
   border-color: #ff5151;
 }
 
-.oval-image {
-  max-width: 500px; 
-  height: 400px;
-  overflow: hidden; 
-  border-radius: 50%; 
-  position: relative;
-}
-
-.oval-image img {
-  width: 100%; /* Make the image cover the entire oval container */
-  height: auto;
-  display: block;
-}
-header{
-  max-width: 500px;
-}
 .banner{
   display: flex;
   height:20vh;
@@ -207,26 +179,6 @@ input{
   display: none;
 }
 
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  margin-top: 5%;
-}
-.heyyouseeso{
-  width:fit-content;
-  border-radius: 2px 200px 2px 200px;
-  width: 100%;
-  padding-bottom: 20px;
-  background-color:#396275; 
-  color: #ffffff; 
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
 main{
   margin: 0;
   padding: 0; 
@@ -235,55 +187,12 @@ main{
   margin-left: 5%;
   margin-right: 5%;
 }
-.om-tekst{
-  width:fit-content;
-  width: 100%;
-  padding-bottom: 20px;
-  background-color:#396275; 
-  color: #ffffff; 
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
 
-}
 .tekst{
   flex-wrap: wrap;
   padding-left: 5%;
   padding-right: 5%;
   font-size: 24px;
-}
-.gallery-item {
-  margin: 10px;
-  position: relative;
-  max-width: 300px; 
-  flex:1;
-  text-align: center;
-}
-
-/* Style for the image */
-.gallery-item img {
-  max-width: 300px; 
-  height: auto;
-  transition: transform 0.3s ease;
-}
-
-/* Style for the text (hidden by default) */
-.image-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #396275;
-  color: #fff;
-  padding: 10px;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-/* Hover effect to show text */
-.gallery-item:hover .image-text {
-  opacity: 1;
 }
 
 aside{
@@ -293,25 +202,10 @@ flex-wrap: wrap;
   font-size: 30px;
 }
 
-.kunst-item {
-  background-color: #396275;
-  color: #f9f9f9;
-  margin-left: 20%;
-  margin-right: 20%;
-  padding-top: 5%;
-  padding-bottom: 2%;
-  border-radius: 2px 50px 2px 50px;
-  text-align: center;
-
-}
 /* Style the portfolio items container */
 .portfolio-container {
   display: flex;
 
-}
-.kompetence{
-  max-width: 65px;
-padding: 2%;
 }
 
 /* Style the portfolio items */
@@ -331,6 +225,9 @@ padding: 2%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  border-radius: 1% 50% 1% 50%;
+  box-shadow: -10px 20px rgb(255, 255, 255, 0.1);
 }
 /* styler kompetence kortet*/
 h2 {
@@ -464,7 +361,8 @@ footer {
   .intro img{
     max-width: 150px;
   }
-
+  .intro{
+    margin-left: 10%;}
   .banner{
     width: 300px;
     position: relative;
@@ -486,10 +384,7 @@ margin: auto;
 }
 
 @media screen and (max-width: 480px) {
-  .intro img{
-    max-width: 130px;
-    left: 98%;
-  }
+
   #root{
     margin: 1%;
   }

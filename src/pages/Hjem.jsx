@@ -16,6 +16,7 @@ import Arty from "../assets/front.png"
 import Uniq from "../assets/uniq.png"
 import Shape from "../assets/shaperina.png"
 import { NavLink } from "react-router-dom";
+import MasonryImageList from "../components/imglist.jsx";
 
 
 
@@ -33,8 +34,7 @@ export default function Hjem() {
             <CssBaseline enableColorScheme />
    
         <header className="banner">
-        <NavLink> <img src={Shape} alt="Banner" className="banner-in" /></NavLink> 
-          <img src="../bulb.gif" alt="lightbulb" className="banner-in" />           
+        <NavLink> <img src={Shape} alt="Banner" className="banner-in" /></NavLink>        
 
         </header>
         <Stack  className="intro" justifyContent={'center'} alignItems={'center'}  >
@@ -137,7 +137,25 @@ export default function Hjem() {
             onClick={() => handleButtonClick('artjourney.rinamunk.dk')}
           />
         </Stack>
+        <section className="kunst">
+        <Typography variant="h4"
+                        sx={{ 
+                          color: customTheme => customTheme.palette.secondary.main, 
+                          margin:10,
+                        }}>
+                          Kunsten 
+                        </Typography>
+        <Typography variant="body"
+                        sx={{ 
+                          color: customTheme => customTheme.palette.primary.main, 
+                        }}
+        >Min hobby er en verden af farver, former og kreativ udfoldelse. 
+        Jeg maler med akvarel, oliefarver og mixed media, og jeg lader mig inspirere af alt omkring mig. 
+        For mig er kunst en frisættende oplevelse, hvor jeg tror på at give slip på alle forventninger og normer. 
+        Det er et frirum, hvor jeg kan lege frit og lade min fantasi flyde.</Typography>
       
+        <MasonryImageList         />
+        </section>
     </ThemeProvider>
   );
 }

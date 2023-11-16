@@ -8,7 +8,7 @@ import Photo from "../assets/ps.png"
 
 export default function KompetenceKort() {
     return(
-        <section className="card"  >
+        <section className="card"            >
             <Typography variant="h5" lineHeight={3}
                             sx={{ 
                                 color: customTheme => customTheme.palette.secondary.main 
