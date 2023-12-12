@@ -25,30 +25,33 @@ export default function Actioncard(props) {
   const { onClick } = props;
 
   return (
-    <Stack>
+    <Stack
+    sx={{
+      justifyContent: 'center',
+      alignContent: 'center',
+      alignItems: 'center'
+    }}
+    >
       <Card
         sx={{
-          width: 390,
-          height: 600,
+          width: 400,
+          height: 700,
           paddingBottom:2,
           margin: 2,
           borderRadius: 15,
           
+          
         }}
       >
         <CardActionArea
-                  sx={{
-                    justifyContent: 'center',
-                    alignContent: 'center',
-                    alignItems: 'center'
-                  }}
+
         >
           <CardMedia 
           component="img" 
           sx={{
-            width:300,
-            justifyContent: 'center',
+            width:400,
             padding:2,
+            
           }}
       
           image={props.image}>

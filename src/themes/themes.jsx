@@ -7,7 +7,7 @@ export const customTheme = (outerTheme) =>
     palette: {
       mode: 'light',
       primary: {
-        main: '#3e7b94',
+        main: '#63b1d2',
         light: '#396275',
         dark: '#0e3341',
       },

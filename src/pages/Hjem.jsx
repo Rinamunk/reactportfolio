@@ -17,6 +17,7 @@ import Uniq from "../assets/uniq.png"
 import Shape from "../assets/shaperina.png"
 import { NavLink } from "react-router-dom";
 import MasonryImageList from "../components/imglist.jsx";
+import SoMe from "../components/SoMe.jsx";
 
 
 
@@ -37,13 +38,19 @@ export default function Hjem() {
         <NavLink> <img src={Shape} alt="Banner" className="banner-in" /></NavLink>        
 
         </header>
-        <Stack  className="intro" justifyContent={'center'} alignItems={'center'}  >
+        <Stack  className="intro" justifyContent={'center'} alignItems={'center'} 
+        sx={{
+          flexWrap: 'wrap',
+          height: 300,
+        }}
+        >
 
           <Typography variant="h3"
                 sx={{ 
+                    fontFamily: 'SEAS',
                   color: customTheme => customTheme.palette.primary.main 
                 }}
-          >Hejsa og tak fordi du kigger forbi!</Typography>
+          >Hejsa og velkommen!</Typography>
                     <Typography variant="h6"
                 sx={{ 
                   color: customTheme => customTheme.palette.primary.main 
@@ -51,11 +58,13 @@ export default function Hjem() {
           >Jeg studerer multimediedesigner på frontend linjen og søger praktik til start 2024.</Typography>
                               <Typography variant="h6"
                 sx={{ 
+                  marginBottom: 4,
                   color: customTheme => customTheme.palette.primary.main 
                 }}
           >Kontakt mig her for høre om jeg passer ind hos jer</Typography>
           <EmailButton/>
           <img src={Rina} className="custom-card-media"></img>
+  
 
 
         </Stack>
@@ -68,6 +77,7 @@ export default function Hjem() {
               <Divider variant="inset" component="ul"  sx={{ margin:6 }}/>
         <Typography variant="h2"
         sx={{
+          fontFamily: 'SEAS',
           color: customTheme => customTheme.palette.primary.main 
         }}
         >Mine Projekter</Typography>
@@ -142,10 +152,11 @@ export default function Hjem() {
                         sx={{ 
                           color: customTheme => customTheme.palette.secondary.main, 
                           margin:10,
+                          fontFamily: 'SEAS',
                         }}>
                           Kunsten 
                         </Typography>
-        <Typography variant="body"
+        <Typography variant="body" className="intro" 
                         sx={{ 
                           color: customTheme => customTheme.palette.primary.main, 
                         }}
@@ -156,6 +167,7 @@ export default function Hjem() {
       
         <MasonryImageList         />
         </section>
+        <SoMe />
     </ThemeProvider>
   );
 }

@@ -11,6 +11,7 @@ export default function KompetenceKort() {
         <section className="card"            >
             <Typography variant="h5" lineHeight={3}
                             sx={{ 
+                                fontFamily: 'SEAS',
                                 color: customTheme => customTheme.palette.secondary.main 
                               }}
             >
